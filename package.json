@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "high-street-hospital-derrick-zack",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jest": "^24.9.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "jest --color --watchAll"
   },

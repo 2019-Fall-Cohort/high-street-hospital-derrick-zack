@@ -3,7 +3,6 @@ class Doctor {
         this.isSeeingPatient = false;
         this.doctorSpecialityList = "Heads";
     }
-
 }
 
 module.exports = Doctor;
