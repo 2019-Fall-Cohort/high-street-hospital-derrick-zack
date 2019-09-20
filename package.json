@@ -1,0 +1,23 @@
+{
+  "name": "high-street-hospital",
+  "version": "1.0.0",
+  "description": "high-street-hospital-derrick-zack",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^24.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --color --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeCanCodeIT/high-street-hospital-derrick-zack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeCanCodeIT/high-street-hospital-derrick-zack/issues"
+  },
+  "homepage": "https://github.com/WeCanCodeIT/high-street-hospital-derrick-zack#readme"
+}
