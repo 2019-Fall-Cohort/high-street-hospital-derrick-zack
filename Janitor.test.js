@@ -8,5 +8,12 @@ describe("Janitor", () => {
             const actual = underTest.getSweeping();
             expect(actual).toBeTruthy();
         })
-   })
+    })
+    describe(`setSweeping`, () => {
+        test(`should set this.sweeping to the passed parameter(boolean)`, () => {
+            underTest.setSweeping(false);
+            const actual = underTest.getSweeping();
+            expect(actual).toBeFalsy();
+        })
+    })    
 })

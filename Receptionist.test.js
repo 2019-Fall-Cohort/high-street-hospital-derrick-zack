@@ -9,4 +9,11 @@ describe("Receptionist", () => {
             expect(actual).toBeTruthy();
         })
    })
+   describe(`setIsOnPhone)`, () => {
+       test(`should set isOnPhone to the passed parameter (boolean)`, () => {
+           underTest.setIsOnPhone(false);
+           const actual = underTest.getIsOnPhone();
+           expect(actual).toBeFalsy();
+       })
+   })
 })
