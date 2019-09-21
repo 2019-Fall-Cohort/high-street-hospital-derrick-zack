@@ -17,21 +17,13 @@ class Employee {
         this.salary = 1001;
     }
 
-    getFullName(){
-        return `${this.firstName} ${this.lastName}`;
-    }
+    getFullName(){return `${this.firstName} ${this.lastName}`;}
 
-    getId(){
-        return this.id;
-    }
+    getId(){return this.id;}
 
-    getJobPosition(){
-        return this.jobPosition;
-    }
+    getJobPosition(){return this.jobPosition;}
 
-    getSalary(){
-        return this.salary;
-    }
+    getSalary(){return this.salary;}
 }
 
 module.exports = Employee;

@@ -1,3 +1,4 @@
+const Employee = require(`./Employee`);
 class Janitor {
     constructor() {
     this.sweeping = true;
