@@ -16,7 +16,7 @@ describe("Patient class", () => {
     describe("getHealthLevel", () => {
         test("should return the patient's health level", () => {
             actual = underTest.getHealthLevel();
-            expect(actual).toBe(10);
+            expect(actual).toBe(16);
         })
     })
     describe("inflictPatientIllness", () => {
@@ -41,5 +41,12 @@ describe("Patient class", () => {
             actual = underTest.getBloodLevel();
             expect(actual).toBe(18);
         })        
+    })
+    describe(`careForPatient`, () => {
+        describe(`patient healthLevel should be incremented by having receiving care`, () => {
+            underTest.careForPatient();
+            actual = underTest.getHealthLevel();
+            expect(actual).toBe(16);
+        })
     })
 })
