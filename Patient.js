@@ -3,7 +3,7 @@ const HEALTH_LEVEL = 10;
 const canHaveBloodDrawn = {
     drawBlood() {
         if (this.bloodLevel > 2){
-            this.bloodLevel -=2 ;
+            this.bloodLevel -= 2 ;
         }    
     }
 }
@@ -16,14 +16,12 @@ class Patient{
         Object.assign(this, canHaveBloodDrawn);
     }
     getPatientId() {return this.patientId;}
-
     getBloodLevel() {return this.bloodLevel;}
-
     getHealthLevel() {return this.healthLevel;}
-
     getPatientIllness() {return this.patientIllness;}
 
-    inflictPatientIllness(){
+    giveBlood() {this.bloodLevel -= 2;}
+    inflictPatientIllness() {
         let newIllness = Math.random();
         if (newIllness <= .49) {
             this.patientIllness = "Tails";
