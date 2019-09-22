@@ -10,7 +10,7 @@ describe("Patient class", () => {
     describe("getBloodLevel", () => {
         test("should return the patient's blood level", () => {
             actual = underTest.getBloodLevel();
-            expect(actual).toBe(20);
+            expect(actual).toBe(18);
         })
     })
     describe("getHealthLevel", () => {
@@ -34,5 +34,12 @@ describe("Patient class", () => {
             actual = typeof underTest.getPatientIllness();
             expect(actual).toBe("string");
         })
+    })
+    describe(`drawBlood`, () => {
+        describe(`patient bloodLevel should be decremented by having blood drawn`, () => {
+            underTest.drawBlood();
+            actual = underTest.getBloodLevel();
+            expect(actual).toBe(18);
+        })        
     })
 })
