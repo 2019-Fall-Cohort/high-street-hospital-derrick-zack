@@ -28,7 +28,7 @@ while (inputCommand !== "q"){
 
             break;
         case "3": 
-
+            console.log(`The current patients are ${patients}`);
             break;
         case "4":
 
